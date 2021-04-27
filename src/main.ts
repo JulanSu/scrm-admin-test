@@ -5,7 +5,17 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store/index'
 
+
+import '@/styles/index.scss' // global css
+// import '@/icons' // icon
+
+
 // element-plus 支持vue3
 import 'element-plus/lib/theme-chalk/index.css'
 
-createApp(App).use(router).use(store).use(ElementPlus).mount('#app')
+
+createApp(App)
+    .use(router)
+    .use(store)
+    .use(ElementPlus)
+    .mount('#app')

@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vue-tsc --noEmit && vite build",
+        "test": "vue-tsc --noEmit && vite build --mode test",
         "serve": "vite preview",
         "prepare": "husky install",
         "pretty-quick": "pretty-quick --stage"
@@ -12,11 +13,14 @@
     "dependencies": {
         "axios": "^0.21.1",
         "element-plus": "*",
+        "js-cookie": "^2.2.1",
+        "path-to-regexp": "^6.2.0",
         "vue": "^3.0.5",
         "vue-router": "^4.0.6",
         "vuex": "^4.0.0"
     },
     "devDependencies": {
+        "@types/node": "^15.0.0",
         "@vitejs/plugin-vue": "^1.2.2",
         "@vue/compiler-sfc": "^3.0.5",
         "husky": "^6.0.0",
